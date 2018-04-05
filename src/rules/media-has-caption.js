@@ -48,7 +48,7 @@ module.exports = {
       if (!isMediaType(context, type)) {
         return;
       }
-      const muteProp = getProp(element.attributes, 'mute');
+      const muteProp = getProp(element.attributes, 'muted');
       const mutePropVal: boolean = getLiteralPropValue(muteProp);
       if (mutePropVal === true) {
         return;
